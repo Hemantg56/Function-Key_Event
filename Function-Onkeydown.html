@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Function-Onkeydown </title>
+</head>
+
+<body>
+
+    <!-- onkeypress ma je input ya contain ma lakhiye to bhija ma aave pan enu last word nahi aave -->
+    <!-- pachi je contain ya input ma backpass karisu to bhija conatin ke input ma backpass thase  -->
+
+    <input type="text" name="" id="nm" onkeydown="down()">
+    <br><br>
+    <textarea name="" id="tex" cols="30" rows="10"></textarea>
+
+    <script>
+        n = document.getElementById('nm')
+        text = document.getElementById('tex')
+        console.log(n)
+
+        function down() {
+            text.innerHTML = n.value
+        }
+    </script>
+
+</body>
+
+</html>
